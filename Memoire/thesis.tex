@@ -1,40 +1,42 @@
-\documentclass[french,master,gcs]{webisthesis}
+  \documentclass[french,master,gcs]{webisthesis}
 
-\usepackage[sort&compress]{natbib}
-\usepackage{booktabs}
-\usepackage{fontawesome}
-\usepackage{xcolor}
-\usepackage{soul}
+  \usepackage{booktabs}
+  \usepackage{fontawesome}
+  \usepackage{xcolor}
+  \usepackage{soul}
+  \usepackage[backend=biber,style=authoryear]{biblatex}
 
-%
-% Values
-% ------
-\ThesisSetTitle{Sécurisation d'IA agentique}
-\ThesisSetKeywords{These, are, my, Keywords} % only for PDF meta attributes
-\ThesisSetLocation{Lyon, France} 
+  %
+  % Values
+  % ------
+  \ThesisSetTitle{Sécurisation d'IA agentique}
+  \ThesisSetKeywords{These, are, my, Keywords} % only for PDF meta attributes
+  \ThesisSetLocation{Lyon, France} 
 
-\ThesisSetAuthor{Clément RONDEAU}
-\ThesisSetStudentNumber{01234}
-\ThesisSetDateOfBirth{27}{4}{1992}
-\ThesisSetPlaceOfBirth{France}
+  \ThesisSetAuthor{Clément RONDEAU}
+  \ThesisSetStudentNumber{01234}
+  \ThesisSetDateOfBirth{27}{4}{1992}
+  \ThesisSetPlaceOfBirth{France}
 
-% Supervisors should usually be Professors from the candidate's university. A second supervisor is not always needed. 
-\ThesisSetSupervisors{Prof.\ Dr.\ Unkown Yet,Prof.\ Dr.\ Also Unknown}
+  % Supervisors should usually be Professors from the candidate's university. A second supervisor is not always needed. 
+  \ThesisSetSupervisors{Prof.\ Dr.\ Unkown Yet,Prof.\ Dr.\ Also Unknown}
 
-\ThesisSetSubmissionDate{30}{6}{2026}
+  \ThesisSetSubmissionDate{30}{6}{2026}
 
-%
-% Utils
-% -------------------------------
-\newcommand{\bscom}[2]{
-    \st{\scriptsize\,#1}{\color{blue}\scriptsize\,#2}%
-  }
-% Create links in the pdf document
-\usehyperref
+  %
+  % Utils
+  % -------------------------------
+  \newcommand{\bscom}[2]{
+      \st{\scriptsize\,#1}{\color{blue}\scriptsize\,#2}%
+    }
+  % Create links in the pdf document
+  \usehyperref
 
-%
-% Document
-%
+  \addbibresource{MasterThesisGuardia.bib}
+
+  %
+  % Document
+  %
 
 \begin{document}
 \begin{frontmatter}
@@ -63,8 +65,8 @@
 \include{appendixA}
 
 % Bibliography
-\bibliographystyle{plainnat} % requires package natbib. An alternative is apalike
-\bibliography{literature}    % load file literature.bib
+\nocite{*}
+\printbibliography
 
 \end{document}
 

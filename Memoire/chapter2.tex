@@ -1,6 +1,6 @@
 \chapter{How to Display Results} \label{displaying-results}
 
-Results should be displayed primarily in tables (see Table~\ref{table-with-numbers}), figures (see Figure~\ref{a-as-figure}), enumerations, and itemizations. 
+Results should be displayed primarily in tables (see Table~\ref{table-with-numbers}), figures (see Figure~\ref{a-as-figure}), enumerations, and itemizations.
 
 \section{Figures and Tables}
 
@@ -13,7 +13,7 @@ Results should be displayed primarily in tables (see Table~\ref{table-with-numbe
 \end{figure}
 
 To demonstrate the usage of figures and tables, here are some examples like Figure~\ref{a-as-figure} % Usually, a figure should be placed directly above the paragraph where it is referenced for the first time. 
-and some table with some numbers (Table~\ref{table-with-numbers}) that for some reason deserves to be on an extra page. 
+and some table with some numbers (Table~\ref{table-with-numbers}) that for some reason deserves to be on an extra page.
 
 % An example table; hint for 'cleaner' LaTeX files: move the table to a dedicated *.tex file named like the table label and then include it via \input{<table-label>}
 \begin{table}[p]% extra page (usually for large figures/tables)
@@ -22,17 +22,17 @@ and some table with some numbers (Table~\ref{table-with-numbers}) that for some 
   \centering\small
   \begin{tabular}{@{}lrrr@{}} % use @{} to remove spacing; numbers should be right aligned
     \toprule
-    \multicolumn{4}{c}{\bfseries Some numbers}\\
+    \multicolumn{4}{c}{\bfseries Some numbers} \\
     \midrule
-                      &   1999 & 2000 & 2001 \\
+                      & 1999 & 2000 & 2001     \\
     \cmidrule(l){2-4} % cmidrule: A line from 2nd to 4th column, trimmed on the left hand side
-    Distance (km)     &   23.0 & 18.0 & 42.0 \\
-    Awesomeness (aws) &    3.2 &  8.1 &  2.4 \\
+    Distance (km)     & 23.0 & 18.0 & 42.0     \\
+    Awesomeness (aws) & 3.2  & 8.1  & 2.4      \\
     \bottomrule
   \end{tabular}
 \end{table}
 %
-The Table~\ref{table-with-checkmarks} and Table~\ref{table-with-heatmap} show how every figure and table should be referenced in the text. 
+The Table~\ref{table-with-checkmarks} and Table~\ref{table-with-heatmap} show how every figure and table should be referenced in the text.
 
 \begin{table}[tb]
   \newcommand{\checkYes}{\faCheck}% Uses \faCheck of \usepackage{fontawesome}
@@ -43,16 +43,16 @@ The Table~\ref{table-with-checkmarks} and Table~\ref{table-with-heatmap} show ho
   \centering\small
   \begin{tabular}{@{}l@{\hspace{3\tabcolsep}}cccc@{}} % Use @{\hspace{2\tabcolsep}} to double the spacing
     \toprule
-    \bfseries Entities & \multicolumn{2}{c}{\bfseries Class 1} & \multicolumn{2}{c}{\bfseries Class 2} \\
-    \cmidrule(l{.5em}r{.5em}){2-3}\cmidrule(l{.5em}r{.5em}){4-5} 
-    & Attribute1 & Attribute2 & Attribute3 & Attribute4 \\
+    \bfseries Entities & \multicolumn{2}{c}{\bfseries Class 1} & \multicolumn{2}{c}{\bfseries Class 2}                                     \\
+    \cmidrule(l{.5em}r{.5em}){2-3}\cmidrule(l{.5em}r{.5em}){4-5}
+                       & Attribute1                            & Attribute2                            & Attribute3      & Attribute4      \\
     \midrule
-               Entity1 &            \checkYes &             \checkNo &      \checkPartially &             \checkNo \\
-               Entity2 &             \checkNo &      \checkPartially &            \checkYes &      \checkPartially \\
-               Entity3 &      \checkPartially &            \checkYes &             \checkNo &            \checkYes \\
-               Entity4 &            \checkYes &             \checkNo &      \checkPartially &             \checkNo \\
-               Entity5 &             \checkNo &      \checkPartially &            \checkYes &      \checkPartially \\
-               \bottomrule                          
+    Entity1            & \checkYes                             & \checkNo                              & \checkPartially & \checkNo        \\
+    Entity2            & \checkNo                              & \checkPartially                       & \checkYes       & \checkPartially \\
+    Entity3            & \checkPartially                       & \checkYes                             & \checkNo        & \checkYes       \\
+    Entity4            & \checkYes                             & \checkNo                              & \checkPartially & \checkNo        \\
+    Entity5            & \checkNo                              & \checkPartially                       & \checkYes       & \checkPartially \\
+    \bottomrule
   \end{tabular}
 \end{table}
 
@@ -85,12 +85,12 @@ The Table~\ref{table-with-checkmarks} and Table~\ref{table-with-heatmap} show ho
     \toprule
     \bfseries Entities & \bfseries Attribute1 & \bfseries Attribute2 & \bfseries Attribute3 & \bfseries Attribute4 \\
     \midrule
-               Entity1 &     \heatmapcell{72} &     \heatmapcell{05} &     \heatmapcell{20} &     \heatmapcell{20} \\
-               Entity2 &  \heatmapcell[1]{00} &     \heatmapcell{11} &     \heatmapcell{12} &     \heatmapcell{91} \\
-               Entity3 &     \heatmapcell{63} &     \heatmapcell{36} &     \heatmapcell{68} &     \heatmapcell{27} \\
-               Entity4 &     \heatmapcell{69} &     \heatmapcell{48} &     \heatmapcell{28} &     \heatmapcell{59} \\
-               Entity5 &     \heatmapcell{12} &     \heatmapcell{69} &     \heatmapcell{82} &     \heatmapcell{42} \\
-               Entity6 &     \heatmapcell{23} &     \heatmapcell{07} &     \heatmapcell{45} &     \heatmapcell{85} \\
+    Entity1            & \heatmapcell{72}     & \heatmapcell{05}     & \heatmapcell{20}     & \heatmapcell{20}     \\
+    Entity2            & \heatmapcell[1]{00}  & \heatmapcell{11}     & \heatmapcell{12}     & \heatmapcell{91}     \\
+    Entity3            & \heatmapcell{63}     & \heatmapcell{36}     & \heatmapcell{68}     & \heatmapcell{27}     \\
+    Entity4            & \heatmapcell{69}     & \heatmapcell{48}     & \heatmapcell{28}     & \heatmapcell{59}     \\
+    Entity5            & \heatmapcell{12}     & \heatmapcell{69}     & \heatmapcell{82}     & \heatmapcell{42}     \\
+    Entity6            & \heatmapcell{23}     & \heatmapcell{07}     & \heatmapcell{45}     & \heatmapcell{85}     \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -100,9 +100,9 @@ The Table~\ref{table-with-checkmarks} and Table~\ref{table-with-heatmap} show ho
 Equations should be contained within an \texttt{\textbackslash begin\{equation\}} environment, as with Equation~\ref{equation-example}. Formulas can be set inline with a \$ math environment \$, so \texttt{\$ f(x)=\textbackslash frac\{P(x)\}\{Q(x)\} \$} produces $ f(x)=\frac{P(x)}{Q(x)} $.
 
 \begin{equation}\label{equation-example}
-f(x)=\frac{P(x)}{Q(x)} \ \
-\textrm{and} \ \
-f(x)=\textstyle\frac{P(x)}{Q(x)}
+  f(x)=\frac{P(x)}{Q(x)} \ \
+  \textrm{and} \ \
+  f(x)=\textstyle\frac{P(x)}{Q(x)}
 \end{equation}
 
 Code or pseudocode can be included within listings\footnote{Code listings are explained in detail in the Overleaf \LaTeX{} guide: \url{https://www.overleaf.com/learn/latex/Code\_listing}}.
