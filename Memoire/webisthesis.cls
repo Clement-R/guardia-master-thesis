@@ -480,7 +480,7 @@
       {\bf\the\thesisfrontpagetypename}
     \end{center}
     \vspace{\fill}\normalsize
-    \the\thesisauthor\hfill\if\thesisweb0 \the\thesisfrontpagestudentnumber{} \the\thesisauthorstudentnumber\fi\\%
+    % \the\thesisauthor\hfill\if\thesisweb0 \the\thesisfrontpagestudentnumber{} \the\thesisauthorstudentnumber\fi\\%
     \if\thesisweb0 \the\thesisfrontpageborn\fi\\[3em]
     \newcounter{supervisors}\makeatletter%
     \@for \name:=\the\thesissupervisors\do{%
