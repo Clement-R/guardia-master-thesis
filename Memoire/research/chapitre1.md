@@ -27,3 +27,29 @@
 * Positionner la recherche : expliquer comment le travail proposé s’inscrit dans la littérature existante et quelle contribution spécifique il entend apporter.
 
     → Méthodologie de recherche qui sera utilisée
+
+---
+
+Sujet: Défense d'IA agentique
+
+Thèmes abordés:
+- Gouvernance
+    - Madkour et al., « Agentic AI Risk-Management Standards Profile ».
+    - Khan et al., « AGENTSAFE ».
+    - Wang et al., « MI9 ».
+    - Tabassi, Artificial Intelligence Risk Management Framework (AI RMF 1.0).
+    - Lee et al., « The Perils of Agency ».
+- Détection dynamique
+    - Liu et al., « AgentDoG ».
+    - Betser et al., « AgenTRIM ».
+    - Mitchell, « When the Agent Is the Adversary ».
+    - Jiang et al., « Agentic AI as a Cybersecurity Attack Surface ».
+- Audit
+    - Bhosale et al., « The Dark Side of Autonomous Intelligence ».
+    - Dehghantanha et Homayoun, « SoK ».
+    - Chu, « A Systematic Survey of Security Threats and Defenses in LLM-Based AI Agents ».
+    - Sharma et al., « Willful Disobedience ».
+    - Lazer et al., « A Survey of Agentic AI and Cybersecurity ».
+    - Chen et al., « Clawed and Dangerous ».
+    - Kim et al., « The Attack and Defense Landscape of Agentic AI ».
+    - Qi et al., « Towards trustworthy agentic AI ».

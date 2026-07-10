@@ -62,6 +62,7 @@
   abstract = {AI agents are autonomous systems that combine LLMs with external tools to solve complex tasks. While such tools extend capability, improper tool permissions introduce security risks such as indirect prompt injection and tool misuse. We characterize these failures as unbalanced tool-driven agency. Agents may retain unnecessary permissions (excessive agency) or fail to invoke required tools (insufficient agency), amplifying the attack surface and reducing performance. We introduce AgenTRIM, a framework for detecting and mitigating tool-driven agency risks without altering an agent's internal reasoning. AgenTRIM addresses these risks through complementary offline and online phases. Offline, AgenTRIM reconstructs and verifies the agent's tool interface from code and execution traces. At runtime, it enforces per-step least-privilege tool access through adaptive filtering and status-aware validation of tool calls. Evaluating on the AgentDojo benchmark, AgenTRIM substantially reduces attack success while maintaining high task performance. Additional experiments show robustness to description-based attacks and effective enforcement of explicit safety policies. Together, these results demonstrate that AgenTRIM provides a practical, capability-preserving approach to safer tool use in LLM-based agents.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Cryptography and Security},
+  note = {Comment: Under review},
   file = {C\:\\Users\\ronde\\Zotero\\storage\\CHGJL94Z\\Betser et al. - 2026 - AgenTRIM Tool Risk Mitigation for Agentic AI.pdf;C\:\\Users\\ronde\\Zotero\\storage\\MPVQ386N\\2601.html}
 }
 
@@ -144,6 +145,7 @@
   abstract = {Agentic AI systems introduce a security surface that is qualitatively different from that of stateless LLMs. They persist memory, invoke external tools, coordinate with peer agents, and operate across sessions, allowing attacks to emerge not only at the prompt interface but also through architectural state, delegated authority, and long-horizon interactions. Existing security taxonomies, however, primarily organize threats by attack type, such as prompt injection or jailbreaking, and therefore obscure where in the agentic stack a threat arises and over what timescale it manifests. We propose the Layered Attack Surface Model (\textbackslash lasm), a structural taxonomy for agentic AI security. \textbackslash lasm decomposes the agentic stack into seven layers -- Foundation, Cognitive, Memory, Tool Execution, Multi-Agent Coordination, Ecosystem, and Governance -- and augments them with a four-class temporality axis covering instantaneous, session-persistent, cross-session cumulative, and sub-session-stack threats. We use this 7\$\textbackslash times\$4 framework to analyze 116 papers from 2021--2026. The resulting map reveals that the upper layers of the agentic stack remain sharply under-explored, especially for long-horizon and stack-propagating threats; multiple documented attack regions have no corresponding defenses; and current benchmarks provide no coverage for cross-session or sub-session-stack failure modes. We further derive a cross-layer defense taxonomy, defense recipes for canonical attack classes, and a dependency DAG that separates near-term engineering gaps from fundamental research challenges. We release the per-paper coding, robustness scripts, and a reference Agent Bill of Materials schema to support reproducible analysis.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Cryptography and Security,Computer Science - Machine Learning},
+  note = {Comment: 58 pages, 8 figures, 15 tables},
   file = {C\:\\Users\\ronde\\Zotero\\storage\\696ZEK5T\\Chu - 2026 - A Systematic Survey of Security Threats and Defenses in LLM-Based AI Agents A Layered Attack Surfac.pdf;C\:\\Users\\ronde\\Zotero\\storage\\GUDTYXPS\\2604.html}
 }
 
@@ -262,6 +264,25 @@
   file = {C:\Users\ronde\Zotero\storage\Q7IFUKQL\agentic-ai-attack-defense.html}
 }
 
+@misc{khanAGENTSAFEUnifiedFramework2025,
+  title = {{{AGENTSAFE}}: {{A Unified Framework}} for {{Ethical Assurance}} and {{Governance}} in {{Agentic AI}}},
+  shorttitle = {{{AGENTSAFE}}},
+  author = {Khan, Rafflesia and Joyce, Declan and Habiba, Mansura},
+  year = 2025,
+  month = dec,
+  number = {arXiv:2512.03180},
+  eprint = {2512.03180},
+  primaryclass = {cs.MA},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2512.03180},
+  urldate = {2026-07-10},
+  abstract = {The rapid deployment of large language model (LLM)-based agents introduces a new class of risks, driven by their capacity for autonomous planning, multi-step tool integration, and emergent interactions. It raises some risk factors for existing governance approaches as they remain fragmented: Existing frameworks are either static taxonomies driven; however, they lack an integrated end-to-end pipeline from risk identification to operational assurance, especially for an agentic platform. We propose AGENTSAFE, a practical governance framework for LLM-based agentic systems. The framework operationalises the AI Risk Repository into design, runtime, and audit controls, offering a governance framework for risk identification and assurance. The proposed framework, AGENTSAFE, profiles agentic loops (plan -{$>$} act -{$>$} observe -{$>$} reflect) and toolchains, and maps risks onto structured taxonomies extended with agent-specific vulnerabilities. It introduces safeguards that constrain risky behaviours, escalates high-impact actions to human oversight, and evaluates systems through pre-deployment scenario banks spanning security, privacy, fairness, and systemic safety. During deployment, AGENTSAFE ensures continuous governance through semantic telemetry, dynamic authorization, anomaly detection, and interruptibility mechanisms. Provenance and accountability are reinforced through cryptographic tracing and organizational controls, enabling measurable, auditable assurance across the lifecycle of agentic AI systems. The key contributions of this paper are: (1) a unified governance framework that translates risk taxonomies into actionable design, runtime, and audit controls; (2) an Agent Safety Evaluation methodology that provides measurable pre-deployment assurance; and (3) a set of runtime governance and accountability mechanisms that institutionalise trust in agentic AI ecosystems.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Emerging Technologies,Computer Science - Multiagent Systems},
+  note = {Comment: 12 pages, 1 figure},
+  file = {C\:\\Users\\ronde\\Zotero\\storage\\5KUGHFBP\\Khan et al. - 2025 - AGENTSAFE A Unified Framework for Ethical Assurance and Governance in Agentic AI.pdf;C\:\\Users\\ronde\\Zotero\\storage\\K5XVJHVT\\2512.html}
+}
+
 @misc{kimAttackDefenseLandscape2026,
   title = {The {{Attack}} and {{Defense Landscape}} of {{Agentic AI}}: {{A Comprehensive Survey}}},
   shorttitle = {The {{Attack}} and {{Defense Landscape}} of {{Agentic AI}}},
@@ -277,6 +298,7 @@
   abstract = {AI agents that combine large language models with non-AI system components are rapidly emerging in real-world applications, offering unprecedented automation and flexibility. However, this unprecedented flexibility introduces complex security challenges fundamentally different from those in traditional software systems. This paper presents the first systematic and comprehensive survey of AI agent security, including an analysis of the design space, attack landscape, and defense mechanisms for secure AI agent systems. We further conduct case studies to point out existing gaps in securing agentic AI systems and identify open challenges in this emerging domain. Our work also introduces the first systematic framework for understanding the security risks and defense strategies of AI agents, serving as a foundation for building both secure agentic systems and advancing research in this critical area.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Cryptography and Security},
+  note = {Comment: Accepted to USENIX Security 2026. This manuscript is an extended version of the conference paper, including additional discussion and updated content},
   file = {C\:\\Users\\ronde\\Zotero\\storage\\34ZWTS29\\Kim et al. - 2026 - The Attack and Defense Landscape of Agentic AI A Comprehensive Survey.pdf;C\:\\Users\\ronde\\Zotero\\storage\\2PIGM7ZC\\2603.html}
 }
 
@@ -306,6 +328,24 @@
   urldate = {2026-06-08},
   abstract = {Large language models are vulnerable to jailbreak and prompt injection attacks, and most existing defenses rely on a single, human-crafted global system prompt. This paper proposes a method that automatically optimizes only the suffix of the system prompt on a per-cluster basis while keeping the model parameters and the global prefix fixed. We cluster attack prompts using k-means on the model's final hidden states, and, for each cluster, learn a suffix through an Analyzer-Rebuilder loop. In evaluations that combine an LLM judge with watermark-based detection, our method reduces the test attack success rate (ASR) from about 0.42 to \textbackslash text0. 2 8.},
   keywords = {Analytical models,Benchmark testing,Clustering,Clustering methods,Large Language Model,Large language models,Optimization methods,Prompt engineering,Prompt Injection Defense,Sensitivity analysis,System Prompt}
+}
+
+@misc{lazerSurveyAgenticAI2026,
+  title = {A {{Survey}} of {{Agentic AI}} and {{Cybersecurity}}: {{Challenges}}, {{Opportunities}} and {{Use-case Prototypes}}},
+  shorttitle = {A {{Survey}} of {{Agentic AI}} and {{Cybersecurity}}},
+  author = {Lazer, Sahaya Jestus and Aryal, Kshitiz and Gupta, Maanak and Bertino, Elisa},
+  year = 2026,
+  month = jan,
+  number = {arXiv:2601.05293},
+  eprint = {2601.05293},
+  primaryclass = {cs.CR},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2601.05293},
+  urldate = {2026-07-10},
+  abstract = {Agentic AI marks an important transition from single-step generative models to systems capable of reasoning, planning, acting, and adapting over long-lasting tasks. By integrating memory, tool use, and iterative decision cycles, these systems enable continuous, autonomous workflows in real-world environments. This survey examines the implications of agentic AI for cybersecurity. On the defensive side, agentic capabilities enable continuous monitoring, autonomous incident response, adaptive threat hunting, and fraud detection at scale. Conversely, the same properties amplify adversarial power by accelerating reconnaissance, exploitation, coordination, and social-engineering attacks. These dual-use dynamics expose fundamental gaps in existing governance, assurance, and accountability mechanisms, which were largely designed for non-autonomous and short-lived AI systems. To address these challenges, we survey emerging threat models, security frameworks, and evaluation pipelines tailored to agentic systems, and analyze systemic risks including agent collusion, cascading failures, oversight evasion, and memory poisoning. Finally, we present three representative use-case implementations that illustrate how agentic AI behaves in practical cybersecurity workflows, and how design choices shape reliability, safety, and operational effectiveness.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Cryptography and Security},
+  file = {C\:\\Users\\ronde\\Zotero\\storage\\TMIBTB6L\\Lazer et al. - 2026 - A Survey of Agentic AI and Cybersecurity Challenges, Opportunities and Use-case Prototypes.pdf;C\:\\Users\\ronde\\Zotero\\storage\\U3BZ3MLC\\2601.html}
 }
 
 @misc{leePerilsAgencyHow2026,
@@ -341,6 +381,7 @@
   abstract = {The rise of AI agents introduces complex safety and security challenges arising from autonomous tool use and environmental interactions. Current guardrail models lack agentic risk awareness and transparency in risk diagnosis. To introduce an agentic guardrail that covers complex and numerous risky behaviors, we first propose a unified three-dimensional taxonomy that orthogonally categorizes agentic risks by their source (where), failure mode (how), and consequence (what). Guided by this structured and hierarchical taxonomy, we introduce a new fine-grained agentic safety benchmark (ATBench) and a Diagnostic Guardrail framework for agent safety and security (AgentDoG). AgentDoG provides fine-grained and contextual monitoring across agent trajectories. More Crucially, AgentDoG can diagnose the root causes of unsafe actions and seemingly safe but unreasonable actions, offering provenance and transparency beyond binary labels to facilitate effective agent alignment. AgentDoG variants are available in three sizes (4B, 7B, and 8B parameters) across Qwen and Llama model families. Extensive experimental results demonstrate that AgentDoG achieves state-of-the-art performance in agentic safety moderation in diverse and complex interactive scenarios. All models and datasets are openly released.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Computational Complexity,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  note = {Comment: 40 pages, 26 figures},
   file = {C\:\\Users\\ronde\\Zotero\\storage\\UVWVZ8JZ\\Liu et al. - 2026 - AgentDoG A Diagnostic Guardrail Framework for AI Agent Safety and Security.pdf;C\:\\Users\\ronde\\Zotero\\storage\\Y8HEAAQX\\2601.html}
 }
 
@@ -378,6 +419,7 @@
   abstract = {Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication. Recent red teaming research demonstrates that these agents exhibit critical vulnerabilities in realistic settings: unauthorized compliance with non-owner instructions, sensitive information disclosure, identity spoofing, cross-agent propagation of unsafe practices, and indirect prompt injection through external resources [7]. In healthcare environments processing Protected Health Information, every such vulnerability becomes a potential HIPAA violation. This paper presents a security architecture deployed for nine autonomous AI agents in production at a healthcare technology company. We develop a six-domain threat model for agentic AI in healthcare covering credential exposure, execution capability abuse, network egress exfiltration, prompt integrity failures, database access risks, and fleet configuration drift. We implement four-layer defense in depth: (1) kernel level workload isolation using gVisor on Kubernetes, (2) credential proxy sidecars preventing agent containers from accessing raw secrets, (3) network egress policies restricting each agent to allowlisted destinations, and (4) a prompt integrity framework with structured metadata envelopes and untrusted content labeling. We report results from 90 days of deployment including four HIGH severity findings discovered and remediated by an automated security audit agent, progressive fleet hardening across three VM image generations, and defense coverage mapped to all eleven attack patterns from recent literature. All configurations, audit tooling, and the prompt integrity framework are released as open source.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Cryptography and Security},
+  note = {Comment: Keywords: agentic AI security, autonomous agents, healthcare cybersecurity, zero trust, prompt injection, HIPAA, Kubernetes security, OpenClaw},
   file = {C\:\\Users\\ronde\\Zotero\\storage\\G7AY7VKF\\Maiti - 2026 - Caging the Agents A Zero Trust Security Architecture for Autonomous AI in Healthcare.pdf;C\:\\Users\\ronde\\Zotero\\storage\\V6NCM2W7\\2603.html}
 }
 
@@ -418,6 +460,7 @@
   abstract = {The April 2026 disclosure that a frontier large language model escaped its security sandbox, executed unauthorized actions, and concealed its modifications to version control history demonstrates that agentic AI systems with autonomous tool access can circumvent the containment mechanisms designed to constrain them. This paper analyzes four categories of current containment approaches - alignment training, environmental sandboxing, application-level tool-call interception, and accessible audit systems - and identifies the failure modes each exhibits when the AI agent is treated as a potential adversary rather than a trusted component receiving adversarial inputs. We categorize five behavioral incidents from the public disclosure and situate them within 698 real-world AI scheming incidents documented by the Centre for Long-Term Resilience between October 2025 and March 2026, a 4.9x acceleration establishing the challenge as systemic. We derive five architectural requirements: trust separation through layered OS privilege enforcement with semantic intent analysis, sequential intent inference through five-phase taxonomic monitoring, independent containment integrity monitoring, adversarial audit isolation through logical invisibility, and emergent capability envelope enforcement through distributional divergence monitoring. No publicly described system satisfies all five. We argue that architectural containment is the only durable safety strategy given the inevitable proliferation of equivalent capabilities including open-weight models. The author's published patent portfolio in provider-independent constraint enforcement addresses several of these requirements. Concurrent work including SandboxEscapeBench (arXiv:2603.02277) independently confirms that frontier models can escape standard container sandboxes, corroborating the threat model presented here.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Cryptography and Security},
+  note = {Comment: 17 pages, 30 references, 5 tables. Derives five architectural requirements (R1-R5) for agentic AI containment from the April 2026 Mythos Preview incidents. Assesses AEGIS, Microsoft AGT, NVIDIA OpenShell, and other current systems; finds none satisfies all five requirements. Patent pending},
   file = {C\:\\Users\\ronde\\Zotero\\storage\\J5VFB3BN\\Mitchell - 2026 - When the Agent Is the Adversary Architectural Requirements for Agentic AI Containment After the Apr.pdf;C\:\\Users\\ronde\\Zotero\\storage\\R7XHL5S2\\2604.html}
 }
 
@@ -555,6 +598,24 @@
   howpublished = {https://tryhackme.com/},
   langid = {english},
   file = {C:\Users\ronde\Zotero\storage\DZ3W5QGQ\tryhackme.com.html}
+}
+
+@misc{wangMI9IntegratedRuntime2025,
+  title = {{{MI9}}: {{An Integrated Runtime Governance Framework}} for {{Agentic AI}}},
+  shorttitle = {{{MI9}}},
+  author = {Wang, Charles L. and Singhal, Trisha and Kelkar, Ameya and Tuo, Jason},
+  year = 2025,
+  month = nov,
+  number = {arXiv:2508.03858},
+  eprint = {2508.03858},
+  primaryclass = {cs.AI},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2508.03858},
+  urldate = {2026-07-10},
+  abstract = {Agentic AI systems capable of reasoning, planning, and executing actions present fundamentally distinct governance challenges compared to traditional AI models. Unlike conventional AI, these systems exhibit emergent and unexpected behaviors during runtime, introducing novel agent-related risks that cannot be fully anticipated through pre-deployment governance alone. To address this critical gap, we introduce MI9, the first fully integrated runtime governance framework designed specifically for safety and alignment of agentic AI systems. MI9 introduces real-time controls through six integrated components: agency-risk index, agent-semantic telemetry capture, continuous authorization monitoring, Finite-State-Machine (FSM)-based conformance engines, goal-conditioned drift detection, and graduated containment strategies. Operating transparently across heterogeneous agent architectures, MI9 enables the systematic, safe, and responsible deployment of agentic systems in production environments where conventional governance approaches fall short, providing the foundational infrastructure for safe agentic AI deployment at scale. Detailed analysis through a diverse set of scenarios demonstrates MI9's systematic coverage of governance challenges that existing approaches fail to address, establishing the technical foundation for comprehensive agentic AI oversight.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Emerging Technologies,Computer Science - Multiagent Systems},
+  file = {C\:\\Users\\ronde\\Zotero\\storage\\JXT8HQMT\\Wang et al. - 2025 - MI9 An Integrated Runtime Governance Framework for Agentic AI.pdf;C\:\\Users\\ronde\\Zotero\\storage\\JRZ62P6F\\2508.html}
 }
 
 @misc{wattsPromptInjectionRise,
